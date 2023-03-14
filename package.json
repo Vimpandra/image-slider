@@ -1,0 +1,30 @@
+{
+  "name": "image-slider",
+  "version": "1.0.0",
+  "description": "Image slider exercise, just for practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vimpandra/image-slider.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vimpandra/image-slider/issues"
+  },
+  "homepage": "https://github.com/Vimpandra/image-slider#readme",
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1"
+  }
+}
