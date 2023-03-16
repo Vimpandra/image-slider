@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.mainBanner {
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 100vw;
+    transition: left 300ms ease-in-out;
+}
+
+#slide1, #slide2, #slide3 {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+#slide1 {
+    background-image: url(./images/marek-piwnicki-y5gAjKo8Qeg-unsplash.jpg);
+    top: 0;
+    left: 0;
+}
+#slide2 {
+    background-image: url(./images/mr-harter-zr3z8tGVYLE-unsplash.jpg);
+    top: 0;
+    left: 100vw;
+}
+#slide3 {
+    background-image: url(./images/the-cleveland-museum-of-art-5l-2rxUiU6A-unsplash.jpg);
+    top: 0;
+    left: 200vw;
+}
+
