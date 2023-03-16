@@ -1,5 +1,5 @@
 function autoSliding(onDisplay) {
-    setInterval(changeSlide, 5000);
+    setTimeout(changeSlide, 5000);
 
     function changeSlide() {
         const slide1 = document.getElementById('slide1');
@@ -22,6 +22,7 @@ function autoSliding(onDisplay) {
             slide3.style.left = '200vw';
             onDisplay = 'slide1';
         }
+        setTimeout(changeSlide, 5000);
     }
 }
 
