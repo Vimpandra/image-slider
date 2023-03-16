@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./main.js"></script>
+    <script src="./main.js" defer></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -14,5 +14,17 @@
         <div class="image" id="slide2"></div>
         <div class="image" id="slide3"></div>
     </div>
+    <div class="slideControls">
+        <div class="arrowContainer">
+            <div class="arrow" id="arrowLeft">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M28.05 36 16 23.95 28.05 11.9l2.15 2.15-9.9 9.9 9.9 9.9Z"/></svg>
+            </div>
+            <div class="arrow" id="arrowRight">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m18.75 36-2.15-2.15 9.9-9.9-9.9-9.9 2.15-2.15L30.8 23.95Z"/></svg>
+            </div>
+        </div>
+        <div class="posCircles"></div>
+    </div>
+    <div class="hidden" id="onDisplay">slide1</div>
 </body>
 </html>
