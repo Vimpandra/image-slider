@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
 }
 
+/* Slides */
 .mainBanner {
     width: 100vw;
     height: 100vh;
@@ -41,3 +43,31 @@
     left: 200vw;
 }
 
+/* Arrows */
+.slideControls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.arrowContainer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    cursor: pointer;
+}
+.arrow svg {
+    fill: white;
+    opacity: 0.8;
+}
+
+.hidden {
+    display: none;
+}

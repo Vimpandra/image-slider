@@ -1,6 +1,19 @@
-import { autoSliding } from "./autoSliding";
+import { goNextSlide } from "./goNextSlide";
+import { goPreviousSlide } from "./goPreviousSlide";
 
-// eslint-disable-next-line prefer-const
-let onDisplay = 'slide1';
+let autoSliding = setInterval(goNextSlide, 5000);
 
-autoSliding(onDisplay);
+const arrowLeft = document.getElementById('arrowLeft');
+const arrowRight = document.getElementById('arrowRight');
+
+arrowLeft.addEventListener('click', () => {
+    goPreviousSlide();
+    clearInterval(autoSliding);
+    autoSliding = setInterval(goNextSlide, 5000);
+});
+
+arrowRight.addEventListener('click', () => {
+    goNextSlide();
+    clearInterval(autoSliding);
+    autoSliding = setInterval(goNextSlide, 5000);
+});
