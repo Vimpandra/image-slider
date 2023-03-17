@@ -1,3 +1,5 @@
+import { updateCircles } from "./updateCircles";
+
 function goNextSlide() {
     const slide1 = document.getElementById('slide1');
     const slide2 = document.getElementById('slide2');
@@ -21,6 +23,7 @@ function goNextSlide() {
         slide3.style.left = '200vw';
         onDisplay.textContent = 'slide1';
     }
+    updateCircles();
 }
 
 export { goNextSlide };
